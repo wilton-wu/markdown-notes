@@ -1,90 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-    input[type="radio"]{
-display:none;
-}
-  table{
-  width: 758px;
-  border-top: 1px solid #999;
-  border-left: 1px solid #999;
-  text-align: center;
-  border-spacing: 0;
-}
-table th,td {
-  height: 10px;
-  border-bottom: 1px solid #999;
-  border-right: 1px solid #999;
-}
-
-  </style>
 </head>
-<body>
 
-  <input type="radio">
-  <table>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    
-  </table>
+<body>
+  <div id="ul">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </div>
+  <script>
+    var oUl = document.getElementById("ul");
+    oUl.onclick = function (e) {
+      var e = e || window.event;
+      var target = e.target || e.srcElement;
+      if (target.nodeName.toLowerCase() === 'li') {
+        alert(target.innerText);
+      }
+    }
+  </script>
 </body>
+
 </html>
