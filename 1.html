@@ -6,25 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+  table tr:last-child{
+    color:yellow;
+  }
+  </style>
 </head>
 
 <body>
-  <div id="ul">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </div>
+  <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
   <script>
-    var oUl = document.getElementById("ul");
-    oUl.onclick = function (e) {
-      var e = e || window.event;
-      var target = e.target || e.srcElement;
-      if (target.nodeName.toLowerCase() === 'li') {
-        alert(target.innerText);
-      }
-    }
+  console.log(0.333333333.toFixed(2))
   </script>
 </body>
 
