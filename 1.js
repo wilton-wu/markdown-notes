@@ -1,1 +1,6 @@
-console.log((0.07).toFixed(0)+'%')
+function findMax(val) {
+  const reg = /\d+/g;
+  const max = Math.max(val.match(reg));
+  console.log(max);
+}
+findMax('sff9s999sd7fsdg')
