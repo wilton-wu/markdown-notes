@@ -1,6 +1,5 @@
-function findMax(val) {
-  const reg = /\d+/g;
-  const max = Math.max(val.match(reg));
-  console.log(max);
+bark=function () {
+  console.log("Woof!");
 }
-findMax('sff9s999sd7fsdg')
+
+bark.animal = "dog";
