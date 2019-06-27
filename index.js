@@ -1,5 +1,5 @@
-bark=function () {
-  console.log("Woof!");
-}
 
-bark.animal = "dog";
+
+
+console.log([]===[])
+console.log([].toString===[].toString)
