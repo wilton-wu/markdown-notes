@@ -1,1 +1,9 @@
-console.log(JSON.parse('["上交原件，或清晰黑白扫描件，不可拍照，已填地方不要修改，空白处填写完整"]')[0])
+let arr = []
+// arr.length = 100
+// arr.splice(
+//   3,
+//   1,
+//   666
+// );
+arr[3]=999
+console.log(arr)
