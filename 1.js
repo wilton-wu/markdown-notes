@@ -1,13 +1,13 @@
 var countdown = 10;
 
-function settime(val) {
+function settime() {
 
   console.log(countdown)
   countdown--
   if(countdown>=0){
 
   setTimeout(function () {
-    settime(val)
+    settime()
   }, 1000)
   }else{
     count=10
