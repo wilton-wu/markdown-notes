@@ -6,13 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .text-underline {
+      position: relative;
+      text-decoration: none;
+    }
+    .text-underline:before {
+      transition: all 0.4s ease-in-out;
+      position: absolute;
+      right: 50%;
+      left: 50%;
+      bottom: -2px;
+      display: block;
+      height: 1px;
+      background-color: #000;
+      content: '';
+    }
+    .text-underline:hover:before {
+      right: 0;
+      left: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <div style="border: 1px solid #0000FF;">
-    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4039259775,968389549&fm=26&gp=0.jpg" />
-  </div>
-
+  <a href="#" class="text-underline">the text underline is text-underline.</a>
 </body>
 
 </html>
