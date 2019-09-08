@@ -1,18 +1,8 @@
-var countdown = 10;
+let arr=[1,2,3]
+let flag=666
+let arr2=arr.map(value=>{
+  console.log(flag)
+  return value*value
+})
 
-function settime() {
-
-  console.log(countdown)
-  countdown--
-  if(countdown>=0){
-
-  setTimeout(function () {
-    settime()
-  }, 1000)
-  }else{
-    count=10
-  }
- 
-}
-
-settime()
+console.log(arr2)
